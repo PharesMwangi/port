@@ -3,13 +3,14 @@
     --section-bg: #253f25;
     --white: #fff;
     --heading-color: #f0c14b;
+    --green: #4caf50;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(53, 36, 53);
+    background-color: rgb(125, 167, 125);
     color: greenyellow;
     padding: 15px 5%;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
@@ -26,7 +27,7 @@ header {
 
 header h1 {
     color: var(--heading-color);
-    text-shadow: 0 0 4px #f0c14b, 0 0 8px #fff;
+    text-shadow: 0 0 2px #a38330, 0 0 8px #fff;
 }
 
 .nav-links {
@@ -51,10 +52,10 @@ header h1 {
 
 
 section {
-    background: var(--section-bg);
+    background: var(--white);
     border-radius: var(--border-radius);
     box-shadow: 0 2px 8px rgba(0,0,0,0.12),
-                0 0 18px 2px var(--heading-color); /* glowing border */
+                0 0 18px 2px var(--green); /* glowing border */
     padding: 32px 24px;
     margin: 32px auto;
     max-width: 900px;
@@ -81,7 +82,7 @@ section h2 {
     border-radius: 50%;
     box-shadow:
         0 2px 8px rgba(0,0,0,0.18), 
-        0 0 18px 4px var(--heading-color); 
+        0 0 18px 4px var(--green); 
     flex-shrink: 0;
 }
 
@@ -89,13 +90,13 @@ section h2 {
     flex: 1;
 }
 body{
-    background-color: #253f25;
+    background-color: #e4f0e4;
     text-align: center;
 }
 p{
     text-align: justify;
     font-size: 1.2rem;
-    color: greenyellow;
+    color: rgb(12, 12, 12);
 }
 
 .social-icons {
