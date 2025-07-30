@@ -1,0 +1,130 @@
+:root {
+    --border-radius: 24px;
+    --section-bg: #253f25;
+    --white: #fff;
+    --heading-color: #f0c14b;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(53, 36, 53);
+    color: greenyellow;
+    padding: 15px 5%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 24px;
+    width: 100vw;           
+    left: 0;                
+    margin-left: calc(-5vw);
+    box-sizing: border-box; 
+}
+
+
+header h1 {
+    color: var(--heading-color);
+    text-shadow: 0 0 4px #f0c14b, 0 0 8px #fff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #f0c14b;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #f0eeea;
+}
+
+
+section {
+    background: var(--section-bg);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12),
+                0 0 18px 2px var(--heading-color); /* glowing border */
+    padding: 32px 24px;
+    margin: 32px auto;
+    max-width: 900px;
+    color: var(--white);
+}
+
+
+section h2 {
+    color: var(--heading-color);
+    margin-bottom: 18px;
+}
+
+
+#about .about-content {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+#about img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow:
+        0 2px 8px rgba(0,0,0,0.18), 
+        0 0 18px 4px var(--heading-color); 
+    flex-shrink: 0;
+}
+
+#about .about-text {
+    flex: 1;
+}
+body{
+    background-color: #253f25;
+    text-align: center;
+}
+p{
+    text-align: justify;
+    font-size: 1.2rem;
+    color: greenyellow;
+}
+
+.social-icons {
+    margin-top: 16px;
+}
+
+.social-icons a {
+    color: var(--white);
+    font-size: 2rem;
+    margin-right: 18px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--heading-color);
+}
+
+footer{
+    text-align: center;
+    padding: 16px;
+    margin-top: auto;
+}
+
+@media (max-width: 600px) {
+    #about .about-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #about img {
+        margin-bottom: 16px;
+    }
+}
