@@ -104,7 +104,7 @@ p{
 }
 
 .social-icons a {
-    color: var(--white);
+    color: black;
     font-size: 2rem;
     margin-right: 18px;
     transition: color 0.3s;
