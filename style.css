@@ -3,14 +3,14 @@
     --section-bg: #253f25;
     --white: #fff;
     --heading-color: #f0c14b;
-    --blue: #4ca8af;
+    --blue: #64bcc2;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(76, 141, 167);
+    background-color: rgb(76, 188, 196);
     color: greenyellow;
     padding: 15px 5%;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
