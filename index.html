@@ -5,74 +5,114 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My portfolio">
-    <meta name="author" content="Phares Mwangi.">
-    <title>Portfolio website</title>
+    <meta name="description" content="Phares Mwangi's Portfolio">
+    <meta name="author" content="Phares Mwangi">
+    <title>Phares Mwangi | Portfolio</title>
 </head>
 <body>
-    <header>
-        <h1>Phares Mwangi</h1>
-        
-        <nav aria-labelledby="navigation-links">
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#interests">Interests</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main aria-labelledby="main-content">
-
-        <p>Welcome to my portfolio website.</p>
-
-        <section id="about" aria-describedby="about-description">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <img src="IMG_7069.jpg" alt="My photo" width="200" height="200">
-                <div class="about-text">
-                    <p>HI, I'm Phares Mwangi, a passionate web developer. <br>
-                    I have a background of Information Science and also software development from PLP academy, and I love creating dynamic websites.</p>
-                </div>
+    <input type="checkbox" id="theme-toggle" class="theme-toggle">
+    
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Phares Mwangi</h1>
+                <p class="tagline">Web Developer & Information Scientist</p>
             </div>
-        </section>
+            
+            <nav aria-labelledby="navigation-links">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <label class="theme-switch">
+                <input type="checkbox" class="theme-toggle" onchange="document.body.classList.toggle('dark-theme')">
+                🌙 
+            </label>
 
-        <section id="education" aria-describedby="education-background">
-            <h2>Education Background</h2>
-            <p>I hold a bachelor's degree in Information Science from Kisii university. <br>
-            I'm currently pursuing a software development course at PLP academy.</p>
-            <p class="nav-links"><a href="CURRICULUM VITAE.docx">Click here 😎</a> To download my resume.</p>
-        </section>
-       
-        <section id="interests">
-            <h2>My Interests</h2>
-            <p>I'm highly interested in web-development, exploring modern frameworks both in front-end and back-end technologies.</p>
-        </section>
+        </header>
 
-        <section id="projects" aria-labelledby="project-heading">
-            <h2 id="project-heading">My Projects</h2>
-            <p>For the short time I have been at PLP, I have managed to do some projects as assignments including:</p>
-            <p class="nav-links"><a href="https://github.com/PharesMwangi/calc.git">Project 1</a> - a simple python calculator</p>
-            <p class="nav-links"><a href="https://github.com/PLP-WebTechnologies/july-2025-introduction-to-html-5-PharesMwangi.git">Project 2</a> -a simple html page to showcase the use of accessibilities and SEO best practices </p>
-        </section>
-
-        <section id="contact" aria-labelledby="contact-heading">
-            <h2 id="contact-heading">Contact Me</h2>
-            <p>If you would like to reach me, feel free to get in touch via:</p>
-
-                <div class="social-icons">
-                    <a href="https://x.com/home"><i class="fab fa-x"></i></a>
-                    <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
-                    <a href="https://github.com/PharesMwangi"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/phares-mwangi-445a52357/"><i class="fab fa-linkedin"></i></a>
+        <main aria-labelledby="main-content">
+            <section id="about" aria-describedby="about-description">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <img src="IMG_7069.jpg" alt="Phares Mwangi" class="profile-img">
+                    <div class="about-text">
+                        <p>Hi, I'm Phares Mwangi, a passionate web developer with a background in Information Science from Kisii University. I'm currently enhancing my skills through a software development course at PLP Academy.</p>
+                        <p>I specialize in creating dynamic, accessible websites that follow modern web standards and best practices.</p>
+                    </div>
                 </div>
-        </section>
-    </main>
+            </section>
 
-    <footer>
-        <p>&copy; 2025 Phares Mwangi portfolio. All rights reserved.</p>
-    </footer>
+            <section id="education" aria-describedby="education-background">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>Bachelor of Information Science</h3>
+                    <p class="institution">Kisii University</p>
+                    <p class="duration">2021-2025</p>
+                </div>
+                <div class="education-item">
+                    <h3>Software Development</h3>
+                    <p class="institution">PLP Academy</p>
+                    <p class="duration">2025-Present</p>
+                </div>
+                <a href="CURRICULUM VITAE.docx" class="resume-btn">Download My Resume <i class="fas fa-download"></i></a>
+            </section>
+           
+            <section id="interests">
+                <h2>My Interests</h2>
+                <div class="interests-grid">
+                    <div class="interest-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Web Development</h3>
+                        <p>Building responsive, accessible websites with modern frameworks.</p>
+                    </div>
+                    <div class="interest-card">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend Systems</h3>
+                        <p>Developing efficient server-side applications and APIs.</p>
+                    </div>
+                    <div class="interest-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Mobile Development</h3>
+                        <p>Creating cross-platform mobile applications.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" aria-labelledby="project-heading">
+                <h2 id="project-heading">My Projects</h2>
+                <div class="project-card">
+                    <h3>Python Calculator</h3>
+                    <p>A simple calculator application built with Python.</p>
+                    <a href="https://github.com/PharesMwangi/calc.git" class="project-link">View on GitHub <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="project-card">
+                    <h3>HTML5 Accessibility Demo</h3>
+                    <p>A demonstration of accessibility and SEO best practices in HTML5.</p>
+                    <a href="https://github.com/PLP-WebTechnologies/july-2025-introduction-to-html-5-PharesMwangi.git" class="project-link">View on GitHub <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </section>
+
+            <section id="contact" aria-labelledby="contact-heading">
+                <h2 id="contact-heading">Get In Touch</h2>
+                <p>Feel free to reach out for collaborations or just to say hello!</p>
+                <div class="social-icons">
+                    <a href="https://x.com/home" aria-label="Twitter"><i class="fab fa-x"></i></a>
+                    <a href="https://www.instagram.com/?hl=en" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/PharesMwangi" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/phares-mwangi-445a52357/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; <span class="year">2025</span> Phares Mwangi. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
